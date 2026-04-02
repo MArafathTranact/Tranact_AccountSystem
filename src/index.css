@@ -1,0 +1,13 @@
+@import "tailwindcss";
+
+@theme {
+  /* Define your primary "brand" colors here */
+  --color-brand-50: #f0f9ff;
+  --color-brand-500: #0ea5e9; /* This is your main theme color */
+  --color-brand-600: #0284c7;
+  --color-brand-700: #0369a1;
+
+  /* You can also define your Sidebar/Background colors */
+  --color-sidebar-bg: #0f172a; /* Slate 900 */
+  --color-sidebar-border: #1e293b; /* Slate 800 */
+}
