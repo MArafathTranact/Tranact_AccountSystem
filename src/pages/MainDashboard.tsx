@@ -1,9 +1,13 @@
+"use client";
 
 import DashboardLayout from '../components/layout';
 import { type ColumnDef } from '@tanstack/react-table';
 import { DataTable } from '../components/DataTable';
 import { type Transaction, MOCK_DATA } from '../data/mockData';
 import TablePagination from '../components/TablePagination'; 
+import { 
+Download
+} from 'lucide-react';
 
 function DashBoardContent() {
 
@@ -46,8 +50,8 @@ const transactionColumns: ColumnDef<Transaction>[] = [
         {/* 2. Header Section: Shrink-0 ensures it doesn't compress */}
         <div className="shrink-0 flex justify-between items-center bg-white p-4 rounded-xl border border-slate-200 shadow-sm">
           <h1 className="text-2xl font-bold text-slate-800">Recent Transactions</h1>
-          <button className="bg-brand-500 hover:bg-brand-600 text-white ...">
-            Export Data
+          <button  className="p-2 rounded-md border border-slate-200 bg-white text-slate-600 hover:bg-slate-50 hover:border-slate-300 transition-colors">
+            <Download/>
           </button>
         </div>
 
